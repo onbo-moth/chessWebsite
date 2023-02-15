@@ -1,0 +1,60 @@
+:root {
+  --chat-height: 400px;
+  --chat-controls-height: 40px;
+  --chat-messages-padding: 10px;
+}
+
+
+.chatbox {
+  resize: both;
+  position: relative;
+  height: var(--chat-height);
+  max-width:  300px;
+  border: 1px solid black;
+}
+
+.chatMessages {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: column;
+  height: 100%;
+  max-height: calc(var(--chat-height) - var(--chat-controls-height));
+  border: 1px solid cyan;
+  overflow: scroll;
+}
+
+.chatActions {
+  display: flex;
+  flex: 0 1 var(--chat-controls-height);
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.userMessage {
+  border: 1px solid purple;
+  display: block;
+}
+
+.userMessage p {
+  display: inline;
+}
+
+.userName {
+  font-weight: bold;
+  color: #550055;
+}
+
+.typeGuest {
+  font-style: italic;
+  color: #005500;
+}
+
+.chatInput {
+  width: 100%;
+}
+
+.chatSend {
+  height: var(--chat-controls-height);
+  width:  var(--chat-controls-height);
+}

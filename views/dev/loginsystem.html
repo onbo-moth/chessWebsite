@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select>
+    <option>Login</option>
+    <option>Register</option>
+  </select>
+
+  <form>
+    <label>Username:</label>
+    <input type="text" name="username" minlength="8" maxlength="20"><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" minlength="8">
+  </form>
+
+  <button onclick="sendData()">Submit</button>
+  <button onclick="logoutUser()">Logout</button>
+
+  <h2>Cookie shower</h2>
+  <button onclick="refreshCookieView()">Refresh</button>
+
+  <iframe id="cookieView"></iframe>
+
+  <script src="/static/login/loginfull.js"></script>
+</body>
+</html>

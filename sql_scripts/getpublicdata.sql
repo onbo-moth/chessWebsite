@@ -1,0 +1,1 @@
+SELECT username, registeredAt FROM users WHERE username=?
